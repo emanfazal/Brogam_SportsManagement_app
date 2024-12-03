@@ -55,14 +55,14 @@ class RotatingDotsPainter extends CustomPainter {
     final center = Offset(size.width / 2, size.height / 2);
     final radius = size.width / 3;
 
-    // Draw 3 dots equally spaced around the circle
+
     for (int i = 0; i < 3; i++) {
-      final angle = 2 * pi * (i / 5); // Divide the circle into 3 equal parts
+      final angle = 2 * pi * (i / 5);
       final offset = Offset(
         center.dx + radius * cos(angle),
         center.dy + radius * sin(angle),
       );
-      canvas.drawCircle(offset, 8, paint); // Draw each dot
+      canvas.drawCircle(offset, 8, paint);
     }
   }
 

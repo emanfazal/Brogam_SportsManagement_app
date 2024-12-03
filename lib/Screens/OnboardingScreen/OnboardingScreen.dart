@@ -48,7 +48,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            // PageView with Image and Description
+
             Expanded(
               flex: 7,
               child: PageView.builder(
@@ -72,7 +72,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               ),
             ),
 
-            // SmoothPageIndicator
+
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: Smoothpageindicator(pageController: _pageController),
@@ -108,7 +108,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     required String title,
     required String description,
     required double responsiveWidth,
-    required double responsiveHeight, // Add this parameter for height
+    required double responsiveHeight,
   }) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -155,18 +155,4 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   }
 }
 
-class NextScreen extends StatelessWidget {
-  const NextScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          "Welcome to the Main App!",
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
-    );
-  }
-}

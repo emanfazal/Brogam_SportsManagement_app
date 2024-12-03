@@ -6,13 +6,13 @@ import '../../constants/AppColors.dart';
 class Smoothpageindicator extends StatelessWidget {
   final PageController pageController;
 
-  // Constructor that accepts the existing PageController
+
   const Smoothpageindicator({super.key, required this.pageController});
 
   @override
   Widget build(BuildContext context) {
     return SmoothPageIndicator(
-      controller: pageController,  // Use the passed PageController
+      controller: pageController,
       count: 3,
       effect: const ExpandingDotsEffect(
         dotHeight: 10,
