@@ -1,4 +1,5 @@
 import 'package:brogam_sports_managment/Screens/Auth/SignIn/SignInScreen.dart';
+import 'package:brogam_sports_managment/Screens/BookingsScreen/BookingsScreen.dart';
 import 'package:flutter/material.dart';
 
 class PageProvider with ChangeNotifier {
@@ -11,11 +12,19 @@ class PageProvider with ChangeNotifier {
     notifyListeners();
   }
   void navigateToNextScreen(BuildContext context) {
+      // Navigator.pushReplacement(
+      //   context,
+      //   MaterialPageRoute(
+      //     builder: (context) {
+      //       return Signinscreen();
+      //     },
+      //   ),
+      // );
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
           builder: (context) {
-            return Signinscreen();
+            return BookingsScreen();
           },
         ),
       );

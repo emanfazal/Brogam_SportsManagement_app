@@ -14,7 +14,6 @@ class Splashscreen extends StatelessWidget {
     final screenHeight = MediaQuery.of(context).size.height;
     Provider.of<SplashScreenProvider>(context, listen: false)
         .navigateToNextScreen(context);
-    // Use the calculated percentage for top padding
     final double topPadding = screenHeight * 0.275; // 224px / 812px ≈ 0.275
 
     return Scaffold(
