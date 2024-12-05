@@ -1,7 +1,9 @@
 import 'package:brogam_sports_managment/Widgets/ToggleButton/ToggleButton.dart';
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
+import 'package:provider/provider.dart';
 
+import '../../../Providers/NotificationsProvider.dart';
 import '../../../constants/AppColors.dart';
 
 class NotificationSettingsScreen extends StatefulWidget {
@@ -30,6 +32,8 @@ class _NotificationSettingsScreenState
 
   @override
   Widget build(BuildContext context) {
+    final notificationProvider = Provider.of<NotificationsProvider>(context);
+
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -51,14 +55,19 @@ class _NotificationSettingsScreenState
               "Common",
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
-            buildToggleTile(
-              "General Notification",
-              isGeneralNotificationEnabled,
-                  (value) {
-                setState(() {
-                  isGeneralNotificationEnabled = value;
-                });
+            InkWell(
+              onTap: (){
+                notificationProvider.navigateToNextScreen(context);
               },
+              child: buildToggleTile(
+                "General Notification",
+                isGeneralNotificationEnabled,
+                    (value) {
+                  setState(() {
+                    isGeneralNotificationEnabled = value;
+                  });
+                },
+              ),
             ),
             buildToggleTile(
               "Sound",

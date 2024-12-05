@@ -53,8 +53,8 @@ class ViewTicketScreen extends StatelessWidget {
             Theme(
 
               data: Theme.of(context).copyWith(
-                dividerColor: Colors.transparent, // Remove the top and bottom lines
-                dividerTheme: const DividerThemeData(space: 0), // Avoid extra spacing
+                dividerColor: Colors.transparent,
+                dividerTheme: const DividerThemeData(space: 0),
               ),
               child: ExpansionTile(
                 iconColor: AppColors.black,

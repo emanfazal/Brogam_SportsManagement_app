@@ -132,7 +132,6 @@ class ProfileDetailsScreen extends StatelessWidget {
     );
   }
 
-  // Helper method for creating buttons (Logout, Delete account)
   ElevatedButton buildButton(String title, Color color, VoidCallback onPressed) {
     return ElevatedButton(
       onPressed: onPressed,

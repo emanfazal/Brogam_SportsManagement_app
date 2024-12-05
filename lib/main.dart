@@ -1,3 +1,4 @@
+import 'package:brogam_sports_managment/Providers/NotificationsProvider.dart';
 import 'package:brogam_sports_managment/Providers/OnboardingProvider.dart';
 import 'package:brogam_sports_managment/Providers/ProfileProvider.dart';
 import 'package:brogam_sports_managment/Providers/SplashProvider.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
       ChangeNotifierProvider(create: (_)=>PageProvider()),
       ChangeNotifierProvider(create: (_) => BookingProvider()),
       ChangeNotifierProvider(create: (_) => ProfileProvider()),
+      ChangeNotifierProvider(create: (_) => NotificationsProvider()),
 
 
     ],

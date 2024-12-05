@@ -105,8 +105,8 @@ class BookingsScreen extends StatelessWidget {
                               child: Image.asset(
 
                                 Assets.imagesBookingsImage,
-                                height: MediaQuery.of(context).size.height * 0.2, // Responsive image height
-                                width: MediaQuery.of(context).size.width * 0.4, // Responsive image width
+                                height: MediaQuery.of(context).size.height * 0.2,
+                                width: MediaQuery.of(context).size.width * 0.4,
                                 fit: BoxFit.cover,
                               ),
                             ),

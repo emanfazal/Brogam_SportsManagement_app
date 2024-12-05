@@ -36,7 +36,7 @@ class _EditProfileState extends State<EditProfile> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // Profile Picture with Edit Icon
+
             Stack(
               children: [
                 CircleAvatar(
@@ -48,7 +48,7 @@ class _EditProfileState extends State<EditProfile> {
                   right: -10,
                   child: GestureDetector(
                     onTap: () {
-                      // Handle profile picture update
+
                     },
                     child: CircleAvatar(
 radius: 35,
@@ -234,9 +234,9 @@ SizedBox(height: 20,),
             ),
           ),
           prefixIcon: Padding(
-            padding: const EdgeInsets.all(8.0), // Add padding around the image
+            padding: const EdgeInsets.all(8.0),
             child: Image.asset(
-              Assets.imagesUsaFlag, // Replace with your image asset path
+              Assets.imagesUsaFlag,
               width: 24,
               height: 24,
             ),
